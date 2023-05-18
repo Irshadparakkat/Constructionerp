@@ -65,7 +65,7 @@ export default function Navigation() {
             <Link to={'/'} />
             Dashboard
           </Menu.Item>
-          <SubMenu key={'Settings'} icon={<ContactsOutlined />} title={'Construction'}>
+          <SubMenu key={'Construction'} icon={<ContactsOutlined />} title={'Construction'}>
             <Menu.Item key={'ProjectExecution'}>
               <Link to={'/execution'} />
               Project Execution
@@ -74,7 +74,7 @@ export default function Navigation() {
               <Link to={'/estimation'} />
               Estimation
             </Menu.Item>
-            <Menu.Item key={'PaymentMode'}>
+            <Menu.Item key={'Payments'}>
               <Link to={'/payment/mode'} />
               Payments
             </Menu.Item>
@@ -178,7 +178,7 @@ export default function Navigation() {
             </Menu.Item>
           </SubMenu>
           <SubMenu key={'Admin'} icon={<TeamOutlined />} title={'H.R'}>
-            <Menu.Item key={'Admin'}>
+            <Menu.Item key={'Hr'}>
               <Link to={'/'} />
               H.R
             </Menu.Item>

@@ -94,6 +94,6 @@ export const routesConfig = [
   },
   {
     path: '/suppliers',
-    component: 'Supplier',
+    component: 'Suppliers',
   },
 ];

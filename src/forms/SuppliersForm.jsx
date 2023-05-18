@@ -1,9 +1,7 @@
 import React from 'react';
-import { Form, Input, Checkbox } from 'antd';
+import { Form, Input, Select, Checkbox } from 'antd';
 
-const { CheckboxGroup } = Checkbox;
-
-export default function SupplierForm({ isUpdateForm = false }) {
+export default function SuppliersForm({ isUpdateForm = false }) {
   return (
     <>
       <Form.Item
@@ -40,11 +38,9 @@ export default function SupplierForm({ isUpdateForm = false }) {
           },
         ]}
       >
-        <CheckboxGroup>
-          <Checkbox value="one">Example 1</Checkbox>
-          <Checkbox value="two">Example 2</Checkbox>
-          <Checkbox value="three">Example 3</Checkbox>
-        </CheckboxGroup>
+        <Checkbox value="one">Example 1</Checkbox>
+        <Checkbox value="two">Example 2</Checkbox>
+        <Checkbox value="three">Example 3</Checkbox>
       </Form.Item>
     </>
   );
