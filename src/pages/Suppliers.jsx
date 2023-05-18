@@ -1,15 +1,14 @@
 import React from 'react';
 
 import CrudModule from '@/modules/CrudModule';
-import SupplierForm from '@/forms/SupplierForm';
-export default function Supplier() {
+import SuppliersForm from '@/forms/SuppliersForm';
+export default function Suppliers() {
   const entity = 'Supplier';
   const searchConfig = {
     displayLabels: ['displayName'],
-    searchFields: 'SupplierName,displayName',
+    searchFields: 'supplierName,displayName',
     outputValue: '_id',
   };
-
   const PANEL_TITLE = 'Supplier Panel';
   const dataTableTitle = 'Supplier Lists';
   const entityDisplayLabels = ['displayName'];
@@ -30,7 +29,6 @@ export default function Supplier() {
   const ENTITY_NAME = 'Supplier';
   const CREATE_ENTITY = 'Create Supplier';
   const UPDATE_ENTITY = 'Update Supplier';
-
   const config = {
     entity,
     PANEL_TITLE,
@@ -47,8 +45,8 @@ export default function Supplier() {
   };
   return (
     <CrudModule
-      createForm={<SupplierForm />}
-      updateForm={<SupplierForm isUpdateForm={true} />}
+      createForm={<SuppliersForm />}
+      updateForm={<SuppliersForm isUpdateForm={true} />}
       config={config}
     />
   );
